@@ -1,0 +1,35 @@
+<!--COMP229-Assignment01-Portfolio
+Nandini Hariprasad
+301129100
+03/10/2021-->
+
+<!--Add Header-->
+ <%- include partials/header.ejs%>
+ <!--Add Main Nav-->
+  <%- include partials/main_nav.ejs%>
+
+  <main class="container">
+    <div class="jumbotron">
+      <h1 class="display-4" style="color: #77878B;">Welcome to the <%= title %> page</h1><br>
+
+      <% if (title=="Home" || title == "/"){ %>
+       <%-include partials/home_page.ejs %>
+       <% } else if(title=="About Me"){ %>
+      <%-include partials/about_page.ejs %>
+      <%} else if (title=="Services"){ %>
+       <%-include partials/service_page.ejs %>
+       <%} else if(title=="Projects"){ %>
+       <%-include partials/projects_page.ejs %>
+      <%} %>
+
+ 
+</div>
+ </main>
+   
+<!--Add Bottom Nav-->
+ <%- include partials/bottom_nav.ejs%>
+ <!--Add Footer-->
+  <%- include partials/footer.ejs%>
+ 
+
+ 

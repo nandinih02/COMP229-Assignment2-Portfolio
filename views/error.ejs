@@ -1,0 +1,15 @@
+<!--Add Header-->
+<%- include partials/header.ejs %>
+<!--Add Main Nav-->
+<%- include partials/main_nav.ejs %>
+
+<div class="container">
+<h1><%= message %></h1>
+<h2><%= error.status %></h2>
+<pre><%= error.stack %></pre>
+</div>
+
+<!--Add Bottom Nav-->
+<%- include partials/bottom_nav.ejs %>
+<!--Add Footer-->
+<%- include partials/footer.ejs %>

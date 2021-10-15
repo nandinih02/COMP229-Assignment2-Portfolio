@@ -1,0 +1,37 @@
+{
+  "name": "assignment01-expressportfolio",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "engines": {
+    "node": "^12.18.3",
+    "npm": "^6.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jquery": "^3.6.0",
+    "morgan": "~1.9.1",
+    "popper.js": "^1.16.1"
+  },
+  "description": "My Express Portfolio Assignment for COMP 229",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nandinih02/COMP229-Assignment1-Portfolio.git"
+  },
+  "author": "Nandini Hariprasad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nandinih02/COMP229-Assignment1-Portfolio/issues"
+  },
+  "homepage": "https://github.com/nandinih02/COMP229-Assignment1-Portfolio#readme"
+}

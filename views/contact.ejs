@@ -1,0 +1,43 @@
+<!--Add Header-->
+<%- include partials/header.ejs%>
+<!--Add Main Nav-->
+  <%- include partials/main_nav.ejs%>
+
+<!--Main Class-->
+  <main class="container">
+    <div class="jumbotron">
+        
+        <!--Small invisible pannel with Contact Info-->
+        <div id="panel" style=" width: 500px; margin-right: auto; border-radius: 10px; padding: 15px; opacity: 0.8;">
+        <h3>Contact Info:</h3>
+        <h4 style="color: #305252;">Nandini Hariprasad</h4>
+        <h4 style="color: #305252;">Email: nharipr2@my.centennialcollege.ca</h4>
+        </div>
+     
+        <!--Interactive Contact Form-->
+     <div id="myForm" style="background-color: whitesmoke; width: 850px; margin-left: auto; margin-right: auto; border-radius: 10px; padding: 15px; opacity: 0.8;">
+        <center><h4 style="color: #305252;">Contact me here</h4></center><br>
+    <form action="mailto:nharipr2@my.centennialcollege.ca" method="post">
+        <label style = " width: 350px; text-align: right; float: left; padding-right: 20px;">First Name: </label>
+        <input type="text"><br><br>
+        <label style = " width: 350px; text-align: right; float: left; padding-right: 20px;">Last Name: </label>
+        <input type="text"><br><br>
+        <label style = " width: 350px; text-align: right; float: left; padding-right: 20px;">Contact Number: </label>
+        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+        <label style = " width: 350px; text-align: right; float: left; padding-right: 20px;">Email Address: </label>
+        <input type="email"><br><br>
+        <label style = " width: 350px; text-align: right; float: left; padding-right: 20px;">Message: </label>
+        <textarea cols="45"></textarea><br><br>
+        <label style = " width: 350px; text-align: right; float: left; padding-right: 20px;"><input type="submit" value="submit"></label><input type="reset" value="reset">
+    </form>
+    </div>  
+    <br><br>
+
+    </div>
+  </main>
+
+<!--Add Bottom Nav-->
+   <%- include partials/bottom_nav.ejs%>
+   <!--Add Footer-->
+  <%- include partials/footer.ejs%>
+ 
