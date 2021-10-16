@@ -1,5 +1,5 @@
 {
-  "name": "assignment01-expressportfolio",
+  "name": "assignment02-expressportfolio",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -18,6 +18,7 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jquery": "^3.6.0",
+    "mongoose": "^6.0.11",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
   },
@@ -26,12 +27,12 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nandinih02/COMP229-Assignment1-Portfolio.git"
+    "url": "git+https://github.com/nandinih02/COMP229-Assignment2-Portfolio.git"
   },
   "author": "Nandini Hariprasad",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nandinih02/COMP229-Assignment1-Portfolio/issues"
+    "url": "https://github.com/nandinih02/COMP229-Assignment2-Portfolio/issues"
   },
-  "homepage": "https://github.com/nandinih02/COMP229-Assignment1-Portfolio#readme"
+  "homepage": "https://github.com/nandinih02/COMP229-Assignment2-Portfolio#readme"
 }
