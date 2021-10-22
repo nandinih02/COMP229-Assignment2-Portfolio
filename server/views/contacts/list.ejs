@@ -4,9 +4,9 @@ Nandini Hariprasad
 03/10/2021-->
 
 <!--Add Header-->
- <%- include partials/header.ejs%>
+ <%- include ../partials/header.ejs%>
  <!--Add Main Nav-->
-  <%- include partials/main_nav.ejs%>
+  <%- include ../partials/main_nav.ejs%>
 
   <main class = "container">
      <div class ="row">
@@ -27,8 +27,17 @@ Nandini Hariprasad
               <td class="text-center"><%= ContactsList[count].name %></td>
               <td class="text-center"><%= ContactsList[count].number %></td>
               <td class="text-center"><%= ContactsList[count].email %></td>
-              <td class="text-center"><input type="button" id="updateButton" value="Update"></td>
-              <td class="text-center"><input type="button" id="deleteButton" value="Delete"></td>
+              <td class="text-center">
+                <a href="/contacts-list/update/<%= ContactsList[count]._id %>" class="btn btn-primary btn-sm">
+                <i class="fas fa-pencil-alt"></i> Update</a>
+              </td>
+              <td class="text-center">
+                <a href="/contacts-list/delete/<%= ContactsList[count]._id %>" class="btn btn-danger btn-sm">
+                <i class="fas fa-trash-alt"></i> Delete</a>
+
+            </td>
+
+              
 
           </tr>
           
@@ -41,8 +50,8 @@ Nandini Hariprasad
      
    
  <!--Add Bottom Nav-->
- <%- include partials/bottom_nav.ejs%>
+ <%- include ../partials/bottom_nav.ejs%>
  <!--Add Footer-->
-  <%- include partials/footer.ejs%>
+  <%- include ../partials/footer.ejs%>
 
  
