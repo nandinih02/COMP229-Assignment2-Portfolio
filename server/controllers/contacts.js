@@ -41,12 +41,13 @@ module.exports.displayUpdatePage= (req, res, next) => {
 module.exports.processUpdatePage= (req, res, next) => {
     let id = req.params.id;
 
-    let updateContact = Contacts({
+    let updateContacts = Contacts({
+        "_id": id,
         "name": req.body.name,
         "number": req.body.number,
         "email": req.body.email
     });
-    Contacts.updateOne({_id: id}, updateContact, (err) => {
+    Contacts.updateOne({_id: id}, updateContacts, (err) => {
         if(err)
         {
             console.log(err);
