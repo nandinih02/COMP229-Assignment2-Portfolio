@@ -1,3 +1,8 @@
+//COMP229-Assignment01-Portfolio
+// Nandini Hariprasad
+// 301129100
+// 03/10/2021
+
 //IIFE Immediately Invoked Function Expression
 (function(){
 
@@ -13,7 +18,7 @@
         if(!confirm("Are you sure?"))
         {
           event.preventDefault();
-          window.location.assign('/books-list');
+          window.location.assign('/contacts-list');
         }
 
       });

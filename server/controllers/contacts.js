@@ -15,7 +15,7 @@ module.exports.displayContactsList = (req, res, next) => {
         {
             //console.log(ContactsList);
 
-            res.render('contacts/list', {title: 'Business Contacts', ContactsList: contactsList})
+            res.render('contacts/list', {title: 'Business Contacts', ContactsList: contactsList, displayName: req.user ? req.user.displayName : ''})
         }
     });
 }
@@ -32,7 +32,7 @@ module.exports.displayUpdatePage= (req, res, next) => {
         else
             {
                 //show the edit view
-                res.render('contacts/update', {title: 'Update Contact', contacts: contactToUpdate})
+                res.render('contacts/update', {title: 'Update Contact', contacts: contactToUpdate, displayName: req.user ? req.user.displayName : ''})
             }
 
     });
